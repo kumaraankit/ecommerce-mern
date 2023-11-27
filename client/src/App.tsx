@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import HeaderWrapper from "./wrapper/HeaderWrapper";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -12,7 +13,8 @@ function App() {
 
   return (
     <>
-      <h1>{message}</h1>
+      <HeaderWrapper />
+      {message}
     </>
   );
 }
